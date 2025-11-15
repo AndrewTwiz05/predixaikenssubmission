@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PredixAI - Stop Paying for Breakdowns. Start Guaranteeing Uptime.</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom gradient for hero */
+        .hero-gradient {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .cta-button {
+            @apply px-6 py-3 rounded-lg font-semibold text-white bg-indigo-600 hover:bg-indigo-700 shadow-md transition-all duration-300 transform hover:-translate-y-0.5;
+        }
+        .secondary-button {
+            @apply px-6 py-3 rounded-lg font-semibold text-indigo-700 bg-white border border-indigo-200 hover:bg-indigo-50 shadow-sm transition-all duration-300;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 border-b border-gray-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600">PredixAI</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#problem" class="text-gray-600 hover:text-indigo-600">The Problem</a>
+                <a href="#advantage" class="text-gray-600 hover:text-indigo-600">Our Solution</a>
+                <a href="#pricing" class="text-gray-600 hover:text-indigo-600">Pricing</a>
+                <a href="#demo" class="cta-button">Book Pilot Demo</a>
+            </div>
+            <button class="md:hidden text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+
+        <!-- Hero Section -->
+        <section class="hero-gradient py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                    Stop Paying for Breakdowns.
+                    <br class="hidden md:inline">
+                    <span class="text-indigo-600">Start Guaranteeing Uptime.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-10">
+                    AI-powered predictive maintenance that reduces equipment downtime by 40% and saves ₹50 lakh+ annually. We predict failures before they happen.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#demo" class="cta-button">Book Your Pilot Demo</a>
+                    <a href="#pricing" class="secondary-button">See ROI Calculator</a>
+                </div>
+                <!-- === PRODUCT MOCKUP UPDATED === -->
+                <div class="mt-16 shadow-2xl rounded-xl overflow-hidden max-w-5xl mx-auto bg-gray-800">
+                    <div class="bg-gray-700 px-4 py-3 border-b border-gray-600 flex items-center">
+                        <span class="w-3 h-3 bg-red-500 rounded-full mr-2"></span>
+                        <span class="w-3 h-3 bg-yellow-500 rounded-full mr-2"></span>
+                        <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+                    </div>
+                    <img src="ESP Dashboard.jpg" 
+                         alt="ESP32 Predictive Maintenance Dashboard Mockup" 
+                         class="w-full h-auto object-cover"
+                         onerror="this.src='https://placehold.co/1200x600/374151/e5e7eb?text=Live+Dashboard+Demo'; this.onerror=null;">
+                </div>
+                <!-- === END OF UPDATE === -->
+            </div>
+        </section>
+
+        <!-- Problem Story -->
+        <section id="problem" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-indigo-600 font-semibold uppercase">The Broken Experience</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6">
+                            The 2 AM failure. The 15 lakh loss.
+                        </h2>
+                        <p class="text-lg text-gray-700 mb-4">
+                            At 2 AM, your critical pump fails. Production stops. You call your maintenance provider. They arrive in 6 hours. Diagnosis takes 4 more hours. Parts arrive the next day.
+                        </p>
+                        <p class="text-lg text-gray-700 font-semibold mb-6">
+                            You've just lost ₹15 lakhs in downtime, and this happens every quarter.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <span class="text-red-500 mr-3 mt-1">&#10007;</span>
+                                <p><strong class="text-gray-800">Reactive "Break-Fix" Models:</strong> You pay *after* the failure, guaranteeing you always lose production time.</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-red-500 mr-3 mt-1">&#10007;</span>
+                                <p><strong class="text-gray-800">Manual Guesswork:</strong> Maintenance is scheduled based on arbitrary calendars, not actual equipment health.</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-red-500 mr-3 mt-1">&#10007;</span>
+                                <p><strong class="text-gray-800">Opaque Costs:</strong> Hourly billing and marked-up parts mean you never know the true cost until it's too late.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 p-8 rounded-xl shadow-lg">
+                        <img src="Equipment downtime chaos.png" 
+                             alt="Factory downtime" 
+                             class="rounded-lg shadow-md w-full h-auto"
+                             onerror="this.src='https://placehold.co/600x400/fecaca/b91c1c?text=Factory+Downtime+Visual'; this.onerror=null;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof -->
+        <section id="social-proof" class="py-20 md:py-28 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h3 class="text-center text-gray-600 text-sm font-semibold uppercase tracking-wider mb-8">Trusted by India's fastest-growing manufacturers</h3>
+                <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-6 opacity-70">
+                    <img src="IMTMA_Logo.png" alt="IMTMA Logo" class="h-30" />
+                    <img src="CII_Logo.png" alt="CII Logo" class="h-30" />
+                    <img src="AIMA_Logo.png" alt="AIMA Logo" class="h-30" />
+                    <img src="KEN's\Nasscoom_Logo.png" alt="NASSCOM IoT Council Logo" class="h-30" />
+                    <img src="Siemens_Logo.png" alt="Siemens Partner Logo" class="h-30" />
+                </div>
+                
+                <!-- Data Insight & Testimonials -->
+                <div class="mt-20 grid md:grid-cols-3 gap-8">
+                    <!-- Data Insight -->
+                    <div class="bg-indigo-700 text-white p-8 rounded-xl shadow-lg flex flex-col justify-center text-center">
+                        <p class="text-6xl font-bold mb-4">72%</p>
+                        <p class="text-lg text-indigo-100">
+                            Of manufacturers report unplanned downtime costs exceeding <span class="font-bold">₹50 lakh annually</span>.
+                        </p>
+                    </div>
+                    
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <p class="text-gray-700 text-lg mb-6">"Our maintenance costs dropped 32% in just 3 months. For the first time, we can actually predict failures before they happen."</p>
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/48x48/d1fae5/10b981?text=A" alt="Avatar" class="w-12 h-12 rounded-full mr-4" />
+                            <div>
+                                <p class="font-semibold text-gray-900">Rakesh Lode</p>
+                                <p class="text-sm text-gray-600">Founder & CEO, 1Accord</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <p class="text-gray-700 text-lg mb-6">"The ROI calculator convinced our CFO in one meeting. PredixAI's outcome-based model is a no-brainer."</p>
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/48x48/dbeafe/3b82f6?text=S" alt="Avatar" class="w-12 h-12 rounded-full mr-4" />
+                            <div>
+                                <p class="font-semibold text-gray-900">S. Gupta</p>
+                                <p class="text-sm text-gray-600">Operations Director, Chemical Plant</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- AI Advantage / How it Works -->
+        <section id="advantage" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-indigo-600 font-semibold uppercase">The PredixAI Advantage</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6">
+                        From Reactive Chaos to Predictive Control
+                    </h2>
+                    <p class="text-lg text-gray-700">
+                        Our platform combines rugged ESP32-based sensors with edge-computing AI models to give you weeks of advance warning before a failure.
+                    </p>
+                </div>
+                
+                <!-- Before/After Comparison -->
+                <div class="grid md:grid-cols-2 gap-8 mb-16">
+                    <!-- Before -->
+                    <div class="bg-gray-50 border border-red-200 p-8 rounded-xl shadow-md">
+                        <h4 class="text-2xl font-semibold text-red-700 mb-4">Before: L&T's Reactive Model</h4>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center"><span class="text-red-500 mr-3 text-xl">&#10007;</span>Relies on manual, calendar-based checks.</li>
+                            <li class="flex items-center"><span class="text-red-500 mr-3 text-xl">&#10007;</span>Alerts happen *after* the failure.</li>
+                            <li class="flex items-center"><span class="text-red-500 mr-3 text-xl">&#10007;</span>High cost, high downtime, high stress.</li>
+                            <li class="flex items-center"><span class="text-red-500 mr-3 text-xl">&#10007;</span>You pay per breakdown (hourly + parts).</li>
+                        </ul>
+                    </div>
+                    <!-- After -->
+                    <div class="bg-indigo-50 border border-indigo-200 p-8 rounded-xl shadow-md">
+                        <h4 class="text-2xl font-semibold text-indigo-700 mb-4">After: PredixAI's Uptime Guarantee</h4>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center"><span class="text-green-500 mr-3 text-xl">&#10003;</span>24/7 autonomous monitoring.</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-3 text-xl">&#10003;</span>AI predicts failures 14+ days in advance.</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-3 text-xl">&#10003;</span>Low cost, zero unplanned downtime.</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-3 text-xl">&#10003;</span>You pay a fixed fee for *guaranteed* uptime.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+               <!-- === AI VISUALIZATION - VIDEO EMBEDDED === -->
+                <div class="text-center">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-8">See It In Action: From Sensor Data to Failure Alert</h3>
+                    <!-- This is now a video. 'Factory_Machine_Repair_Visualization.mp4' MUST be in the same folder. -->
+                    <video class="w-full h-auto rounded-xl shadow-lg border border-gray-200" 
+                           autoplay 
+                           loop 
+                           muted 
+                           playsinline
+                           poster="https://placehold.co/1200x675/e0e7ff/4338ca?text=Loading+Demo+Video...">
+                        <source src="Factory_Machine_Repair_Visualization.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <!-- === END OF UPDATE === -->
+
+        <!-- Pricing Model & ROI Calculator -->
+        <section id="pricing" class="py-20 md:py-28 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-indigo-600 font-semibold uppercase">Pricing & ROI</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6">
+                        Pricing That Aligns With Your Uptime
+                    </h2>
+                    <p class="text-lg text-gray-700">
+                        Stop paying for failure. Start paying for results. Our outcome-based model means we only win when you win.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                    <!-- Pricing Plan -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-2">Outcome-Based Guarantee</h4>
+                        <p class="text-4xl font-bold text-indigo-600 mb-4">
+                            ₹8 Lakh / Year
+                        </p>
+                        <p class="text-gray-600 mb-6">(vs. avg. ₹15-30 lakh/year in reactive costs)</p>
+                        <ul class="space-y-3 text-gray-700 mb-8 flex-grow">
+                            <li class="flex items-center"><span class="text-green-500 mr-3 text-xl">&#10003;</span><strong>95% Uptime Guarantee</strong></li>
+                            <li class="flex items-center"><span class="text-green-500 mr-3 text-xl">&#10003;</span>24/7 AI-Monitoring & Alerts</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-3 text-xl">&#10003;</span>All Sensors & Edge Hardware Included</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-3 text-xl">&#10003;</span>Real-time Mobile Dashboard</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-3 text-xl">&#10003;</span>Revenue Share on Savings Beyond Baseline</li>
+                        </ul>
+                        <a href="#demo" class="cta-button text-center">Start Your Pilot</a>
+                    </div>
+                    
+                    <!-- ROI Calculator -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-semibold text-gray-900 mb-6">Calculate Your Savings</h4>
+                        <div class="space-y-6">
+                            <div>
+                                <label for="equipment-count" class="block text-sm font-medium text-gray-700">How many critical machines?</label>
+                                <input type="number" id="equipment-count" value="10" class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                            </div>
+                            <div>
+                                <label for="downtime-cost" class="block text-sm font-medium text-gray-700">Avg. cost per hour of downtime (in ₹)?</label>
+                                <input type="number" id="downtime-cost" value="50000" class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                            </div>
+                            <div>
+                                <label for="downtime-events" class="block text-sm font-medium text-gray-700">Avg. unplanned downtime events per year?</label>
+                                <input type="number" id="downtime-events" value="8" class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                            </div>
+                            <button id="calculate-roi" class="w-full secondary-button font-bold">Calculate</button>
+                            <div id="roi-result-container" class="text-center pt-4" style="display: none;">
+                                <p class="text-gray-600">Your estimated annual savings with PredixAI:</p>
+                                <p class="text-4xl font-bold text-green-600" id="roi-result">₹0</p>
+                                <p class="text-sm text-gray-500 mt-2">Based on a 40% reduction in downtime costs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conversion Path / Signup Flow -->
+        <section id="demo" class="py-20 md:py-32 hero-gradient">
+            <div class="container mx-auto px-6">
+                <div class="bg-white p-10 md:p-16 rounded-2xl shadow-xl max-w-4xl mx-auto">
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                            Ready to Eliminate Downtime?
+                        </h2>
+                        <p class="text-lg text-gray-700 mt-4">
+                            Book your 30-day pilot. We'll deploy on 2 of your machines and prove the ROI.
+                        </p>
+                    </div>
+                    <!-- Signup Form Mockup -->
+                    <form action="#" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="full-name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" name="full-name" id="full-name" required class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                        </div>
+                        <div>
+                            <label for="company-name" class="block text-sm font-medium text-gray-700">Company Name</label>
+                            <input type="text" name="company-name" id="company-name" required class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label for="email" class="block text-sm font-medium text-gray-700">Work Email</label>
+                            <input type="email" name="email" id="email" required class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                        </div>
+                        <div class="md:col-span-2 text-center">
+                            <button type="submit" class="cta-button w-full md:w-auto">Start My Free Pilot</button>
+                        </div>
+                    </form>
+                    
+                    <!-- Welcome/Onboarding Flow Mockup -->
+                    <div class="mt-12 text-center">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-4">What happens next?</h4>
+                        <ol class="flex flex-col md:flex-row justify-center gap-6 md:gap-8 text-left">
+                            <li class="flex items-center md:flex-col md:text-center">
+                                <span class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-indigo-600 text-white rounded-full font-bold text-xl mr-4 md:mr-0 md:mb-3">1</span>
+                                <p class="text-gray-700">Instant ROI report & case study PDF via email.</p>
+                            </li>
+                            <li class="flex items-center md:flex-col md:text-center">
+                                <span class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-indigo-600 text-white rounded-full font-bold text-xl mr-4 md:mr-0 md:mb-3">2</span>
+                                <p class="text-gray-700">30-min consultation & equipment health audit.</p>
+                            </li>
+                            <li class="flex items-center md:flex-col md:text-center">
+                                <span class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-indigo-600 text-white rounded-full font-bold text-xl mr-4 md:mr-0 md:mb-3">3</span>
+                                <p class="text-gray-700">Rapid 2-day sensor deployment for your pilot.</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 PredixAI. All rights reserved. Built for The Ken Case Competition.</p>
+            <p class="text-sm mt-2">Stop guessing. Start predicting.</p>
+        </div>
+    </footer>
+
+    <!-- ROI Calculator JavaScript -->
+    <script>
+        document.getElementById('calculate-roi').addEventListener('click', function() {
+            const equipmentCount = parseFloat(document.getElementById('equipment-count').value) || 0;
+            const downtimeCost = parseFloat(document.getElementById('downtime-cost').value) || 0;
+            const downtimeEvents = parseFloat(document.getElementById('downtime-events').value) || 0;
+            
+            // A simple, defensible formula for the demo:
+            // Total Annual Downtime Cost = (Avg. Events) * (Avg. Cost per Hour) * (Avg. Hours per Event - assuming 8)
+            const totalAnnualDowntimeCost = downtimeEvents * downtimeCost * 8;
+            
+            // Our 40% saving
+            const potentialSavings = totalAnnualDowntimeCost * 0.40;
+            
+            const formatter = new Intl.NumberFormat('en-IN', {
+                style: 'currency',
+                currency: 'INR',
+                maximumFractionDigits: 0,
+            });
+            
+            document.getElementById('roi-result').innerText = formatter.format(potentialSavings);
+            document.getElementById('roi-result-container').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
